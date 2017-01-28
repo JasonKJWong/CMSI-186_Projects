@@ -16,10 +16,11 @@ Public static void main (Strings args[]){
       System.out.println("Error, Invalid");
       
     } else if (CalendarStuff.dateEquals(month1, day1, year1, month2, day2, year2) == true){
-      System.out.println("Error, the dates that were inputted are equal")
+      System.out.println("Error, the dates that were inputted are equal");
     
-    } 
-  
+    } else if (CalendarStuff.isValidDate(month1, day1, year1, month2, day2, year2) == true){
+      System.out.println("Error, the dates that were inputted are invalid");
+    }
   long finalBetween = CalendarStuff.daysBetween(month1, day1, year1, month2, day2, year2)
     System.out.println("The days in between the two inputted dates are: " + finalBetween");
                        }
