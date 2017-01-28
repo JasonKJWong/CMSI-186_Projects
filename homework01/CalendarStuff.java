@@ -110,7 +110,7 @@ public static long daysBetween( long month1, long day1, long year1, long month2,
         return daysBetween1;
 
       } else if (year1 - year2 >= 0 && year2 =! 2 && year1 =! 2){
-        return dayBetweenb;
+         return dayBetweenb;
 
       } else if (year2 - year1 >= 0 && year2 == 2){
         return yearTest + dayTest;
