@@ -20,7 +20,7 @@ Public static void main (Strings args[]){
     
     } 
   
-  finalBetween = CalendarStuff.daysBetween(month1, day1, year1, month2, day2, year2)
+  long finalBetween = CalendarStuff.daysBetween(month1, day1, year1, month2, day2, year2)
     System.out.println("The days in between the two inputted dates are: " + finalBetween");
                        }
   }
