@@ -99,7 +99,7 @@ public static long daysBetween( long month1, long day1, long year1, long month2,
       long dayTest = (day2 - day1);
       long monthTest = ((month2 - month1) *30);
       long yearTest = ((year2 - year1) * 365);
-      long daysBetween1 = dayTest + monthTest + tearTest;
+      long daysBetween1 = dayTest + monthTest + yearTest;
 
       long dayTestb = (day1 - day2);
       long monthTestb = ((month1 - month2)*30);
