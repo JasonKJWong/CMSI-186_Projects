@@ -94,22 +94,36 @@ public static boolean isValidDate( long month, long day, long year ) {
          default: throw new IllegalArgumentException( "Illegal day value given to 'toDayOfWeekString()'." );
       }
    }
+public static long daysBetween( long month1, long day1, long year1, long month2, long day2, long year2 ) {
 
-   public static long daysBetween( long month1, long day1, long year1, long month2, long day2, long year2 ) {
-      long dayCount = 0;
+      long dayTest = (day2 - day1);
+      long monthTest = ((month2 - month1) *30);
+      long yearTest = ((year2 - year1) * 365);
+      long daysBetween1 = dayTest + monthTest + tearTest;
 
-      long dayTest
-      long monthTest
-      long yearTest
+      long dayTestb = (day1 - day2);
+      long monthTestb = ((month1 - month2)*30);
+      long yearTestb = ((year1 - year 2)*365);
+      long daysBetweenb = dayTestb + monthTestb + yearTestb;
 
+      if (year2 - year1 >= 0 && year2 =! 2 && year1 =! 2){
+        return daysBetween1;
 
-      while (!= dateEquals)
+      } else if (year1 - year2 >= 0 && year2 =! 2 && year1 =! 2){
+        return dayBetweenb;
 
-      daycount = daycount + 1;
+      } else if (year2 - year1 >= 0 && year2 == 2){
+        return yearTest + dayTest;
 
+      } else if (year1 - year2 >= 0 && year1 == 2){
+        return yearTestb + dayTestb;
+        
+      } else if (year2 - year1 >= 0 && year2 == 2 && year1 == 2){
+        return yearTest + dayTest;
 
-
-      return dayCount;
+      } else if (year1- year2 >= 0 && year2 == 2 && year1 == 2){
+        return yearTestb + dayTestb;
+      }
+      return 0;
    }
-
 }
