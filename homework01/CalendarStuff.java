@@ -77,7 +77,7 @@ public class CalendarStuffEmpty {
 
 
 public static boolean isValidDate( long month, long day, long year ) {
- if (year <=0 || args.length!=6|| day<1 || day > daysInMonth(month,year) || month> 12 || month< 1){
+ if (year <=0 || day<1 || day > daysInMonth(month,year) || month> 12 || month< 1){
  return false;
  }
        return true;
