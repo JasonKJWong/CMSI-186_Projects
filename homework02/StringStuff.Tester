@@ -168,6 +168,12 @@ System.out.print( "Test for U: " );
     String test11 = StringStuff.reverse( "i like koalas" );
     System.out.println(  test11.equals("salaok ekil i")   ? "works" : "failed"); }
  catch ( Exception e ) {System.out.println (false); }
+ 
+ try {
+    System.out.println ("reverse of helloolleh");
+    String test11 = StringStuff.reverse( "helloolleh" );
+    System.out.println(  test11.equals("helloolleh")   ? "works" : "failed"); }
+ catch ( Exception e ) {System.out.println (false); }
 
    try {
     System.out.println ("reverse of jason wong");
