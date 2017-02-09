@@ -159,13 +159,17 @@ System.out.print( "Test for U: " );
 
    public static void test_reverse() {
 
-   System.out.println ("reverse of i like koalas");
-
    try {
+    System.out.println ("reverse of i like koalas");
     String test11 = StringStuff.reverse( "i like koalas" );
     System.out.println(  test11.equals("salaok ekil i")   ? "works" : "failed"); }
  catch ( Exception e ) {System.out.println (false); }
 
+   try {
+    System.out.println ("reverse of jason wong");
+    String test11 = StringStuff.reverse( "jason wong" );
+    System.out.println(  test11.equals("gnow nosaj")   ? "works" : "failed"); }
+ catch ( Exception e ) {System.out.println (false); }
    }
 
 }
