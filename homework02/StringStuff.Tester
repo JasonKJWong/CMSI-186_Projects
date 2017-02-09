@@ -42,20 +42,45 @@ public class StringStuffTester {
    * test method to test out the operation of the containsVowel method
    */
    public static void test_containsVowel() {
+   
+   System.out.println ("Test for vowels.");
+   
+      System.out.print( "Test for U: " );
+      try { System.out.println( StringStuff.containsVowel( "U" ) ? "true" : "false" ); }
+      catch( Exception e ) { System.out.println ( false ); }
+      
+      System.out.print( "Test for Umbrella: " );
+      try { System.out.println( StringStuff.containsVowel( "Umbrella" ) ? "true" : "false" ); }
+      catch( Exception e ) { System.out.println ( false ); }
+      
+      System.out.print( "Test for Hamster: " );
+      try { System.out.println( StringStuff.containsVowel( "Hamster" ) ? "true" : "false" ); }
+      catch( Exception e ) { System.out.println ( false ); }
+      
+      System.out.print( "Test for Apache " );
+      try { System.out.println( StringStuff.containsVowel( "Apache" ) ? "true" : "false" ); }
+      catch( Exception e ) { System.out.println ( false ); }
 
    }
 
-  /**
-   * test method to test out the operation of the isPalindrome method
-   */
+
    public static void test_isPalindrome() {
 
+    System.out.println ("Palindrome Test");
+    
+    System.out.print( "Test for racecar:  " );
+    try { System.out.println( StringStuff.isPalindrome( "racecar" ) ? "true" : "false" ); }
+    catch( Exception e ) { System.out.println ( false ); }
    }
 
-  /**
-   * test method to test out the operation of the evensOnly method
-   */
    public static void test_evensOnly() {
+
+     System.out.println ("Evens Only");
+     
+    System.out.print( "Test for racecar:  " );
+    try { System.out.println( StringStuff.evensOnly( "racecar" ) ? "true" : "false" ); }
+    catch( Exception e ) { System.out.println ( false ); }
+
 
    }
 
