@@ -1,4 +1,3 @@
-
 /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *  File name     :  StringStuffTester.java
  *  Purpose       :  A test harness file for testing out the methods in the "StringStuff.java" class
@@ -25,33 +24,33 @@ public class StringStuffTester {
 
    public static void main ( String [] args ) {
 
-      test_containsVowel();      // 
-      test_isPalindrome();       // 
-      test_evensOnly();          // 
-      test_oddsOnly();           // 
+      test_containsVowel();      //
+      test_isPalindrome();       //
+      test_evensOnly();          //
+      test_oddsOnly();           //
       test_evensOnlyNoDupes();   //
-      test_oddsOnlyNoDupes();    // 
-      test_reverse();            // 
+      test_oddsOnlyNoDupes();    //
+      test_reverse();            //
    }
 
    public static void test_containsVowel() {
-   
+
    System.out.println ("Test for vowels.");
-   
+
       System.out.print( "Test for U: " );
-      try { System.out.println( StringStuff.containsVowel( "U" ) ? "true" : "false" ); }
+      try { System.out.println( StringStuff.containsVowel( "U" ) ? "works : "failed" ); }
       catch( Exception e ) { System.out.println ( false ); }
-      
+
       System.out.print( "Test for Umbrella: " );
-      try { System.out.println( StringStuff.containsVowel( "Umbrella" ) ? "true" : "false" ); }
+      try { System.out.println( StringStuff.containsVowel( "Umbrella" ) ? "works" : "failed" ); }
       catch( Exception e ) { System.out.println ( false ); }
-      
+
       System.out.print( "Test for Hamster: " );
-      try { System.out.println( StringStuff.containsVowel( "Hamster" ) ? "true" : "false" ); }
+      try { System.out.println( StringStuff.containsVowel( "Hamster" ) ? "works" : "failed" ); }
       catch( Exception e ) { System.out.println ( false ); }
-      
+
       System.out.print( "Test for Apache " );
-      try { System.out.println( StringStuff.containsVowel( "Apache" ) ? "true" : "false" ); }
+      try { System.out.println( StringStuff.containsVowel( "Apache" ) ? "works" : "failed" ); }
       catch( Exception e ) { System.out.println ( false ); }
 
    }
@@ -60,19 +59,20 @@ public class StringStuffTester {
    public static void test_isPalindrome() {
 
     System.out.println ("Palindrome Test");
-    
-    System.out.print( "Test for racecar:  " );
-    try { System.out.println( StringStuff.isPalindrome( "racecar" ) ? "true" : "false" ); }
-    catch( Exception e ) { System.out.println ( false ); }
+
+   System.out.print( "Test for racecar:  " );
+   try { System.out.println( StringStuff.isPalindrome( "racecar" ) ? "works" : "failed" ); }
+   catch( Exception e ) { System.out.println ( false ); }
    }
 
    public static void test_evensOnly() {
 
     System.out.println ("Evens Only");
-     
-    System.out.print( "Test for racecar:  " );
-    try { System.out.println( StringStuff.evensOnly( "racecar" ) ? "true" : "false" ); }
-    catch( Exception e ) { System.out.println ( false ); }
+    try {
+    System.out.print( "Test for KOALA:  " );
+    String test7 = StringStuff.evensOnly( "KOALA");
+    System.out.println(  test7.equals("L")   ? "works" : "failed"); }
+    catch ( Exception e ) {System.out.println (false); }
 
 
    }
@@ -81,44 +81,49 @@ public class StringStuffTester {
    public static void test_oddsOnly() {
 
    System.out.println ("Odds Only");
-     
-    System.out.print( "Test for racecar:  " );
-    try { System.out.println( StringStuff.oddsOnly( "racecar" ) ? "true" : "false" ); }
-    catch( Exception e ) { System.out.println ( false ); }
-    
+   try {
+   System.out.print( "Test for KOALA:  " );
+   String test8 = StringStuff.oddsOnly( "KOALA");
+   System.out.println(  test8.equals("KOAA")   ? "works" : "failed"); }
+   catch ( Exception e ) {System.out.println (false); }
+
    }
 
 
    public static void test_evensOnlyNoDupes() {
 
     System.out.println ("EvensOnlyNoDupes");
-     
-    System.out.print( "Test for racecar:  " );
-    try { System.out.println( StringStuff.evensOnlyNoDupes( "racecar" ) ? "true" : "false" ); }
-    catch( Exception e ) { System.out.println ( false ); }
-    
+
+    try {
+    System.out.print( "Test for KOALA:  " );
+    String test9 = StringStuff.evensOnlyNoDupes( "KOALA");
+    System.out.println(  test9.equals("L")   ? "works" : "failed"); }
+    catch ( Exception e ) {System.out.println (false); }
+
    }
 
 
    public static void test_oddsOnlyNoDupes() {
 
     System.out.println ("oddsOnlyNoDupes");
-     
-    System.out.print( "Test for racecar:  " );
-    try { System.out.println( StringStuff.oddsOnlyNoDupes( "racecar" ) ? "true" : "false" ); }
-    catch( Exception e ) { System.out.println ( false ); }
-    
+
+    try {
+    System.out.print( "Test for KOALA:  " );
+    String test10 = StringStuff.oddsOnlyNoDupes( "KOALA");
+    System.out.println(  test10.equals("KOA")   ? "works" : "failed"); }
+    catch ( Exception e ) {System.out.println (false); }
    }
 
 
    public static void test_reverse() {
 
-   System.out.println ("reverse test");
-     
-    System.out.print( "Test for racecar:  " );
-    try { System.out.println( StringStuff.reverse( "racecar" ) ? "true" : "false" ); }
-    catch( Exception e ) { System.out.println ( false ); }
-    
+   System.out.println ("reverse of i like koalas");
+
+   try {
+    String test11 = StringStuff.reverse( "i like koalas" );
+    System.out.println(  test11.equals("salaok ekil i")   ? "works" : "failed"); }
+ catch ( Exception e ) {System.out.println (false); }
+
    }
 
 }
