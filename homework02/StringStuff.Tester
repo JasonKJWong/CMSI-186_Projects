@@ -172,7 +172,6 @@ System.out.print( "Test for U: " );
     catch ( Exception e ) {System.out.println (false); }
    }
 
-
    public static void test_reverse() {
 
    try {
