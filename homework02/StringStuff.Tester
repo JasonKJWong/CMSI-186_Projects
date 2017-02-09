@@ -145,6 +145,12 @@ System.out.print( "Test for U: " );
     String test9 = StringStuff.evensOnlyNoDupes( "KOALA");
     System.out.println(  test9.equals("L")   ? "works" : "failed"); }
     catch ( Exception e ) {System.out.println (false); }
+    
+    try {
+    System.out.print( "Test for Turnover  " );
+    String test9 = StringStuff.evensOnlyNoDupes( "Turnover");
+    System.out.println(  test9.equals("ortv")   ? "works" : "failed"); }
+    catch ( Exception e ) {System.out.println (false); }
 
    }
 
@@ -154,9 +160,15 @@ System.out.print( "Test for U: " );
     System.out.println ("oddsOnlyNoDupes");
 
     try {
-    System.out.print( "Test for KOALA:  " );
+    System.out.print( "Test for KOALA  " );
     String test10 = StringStuff.oddsOnlyNoDupes( "KOALA");
     System.out.println(  test10.equals("KOA")   ? "works" : "failed"); }
+    catch ( Exception e ) {System.out.println (false); }
+    
+    try {
+    System.out.print( "Test for :  AAAEIOU" );
+    String test10 = StringStuff.oddsOnlyNoDupes( "AAEIOU");
+    System.out.println(  test10.equals("AEIU")   ? "works" : "failed"); }
     catch ( Exception e ) {System.out.println (false); }
    }
 
