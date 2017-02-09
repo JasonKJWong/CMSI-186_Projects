@@ -24,13 +24,13 @@ public class StringStuffTester {
 
    public static void main ( String [] args ) {
 
-      test_containsVowel();      // 5 
-      test_isPalindrome();       // 5
-      test_evensOnly();          //
-      test_oddsOnly();           //
-      test_evensOnlyNoDupes();   //
-      test_oddsOnlyNoDupes();    //
-      test_reverse();            //
+      test_containsVowel();      
+      test_isPalindrome();      
+      test_evensOnly();          
+      test_oddsOnly();           
+      test_evensOnlyNoDupes();  
+      test_oddsOnlyNoDupes();    
+      test_reverse();          
    }
 
    public static void test_containsVowel() {
