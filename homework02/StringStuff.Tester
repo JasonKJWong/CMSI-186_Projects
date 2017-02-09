@@ -40,6 +40,10 @@ public class StringStuffTester {
       System.out.print( "Test for U: " );
       try { System.out.println( StringStuff.containsVowel( "U" ) ? "works : "failed" ); }
       catch( Exception e ) { System.out.println ( false ); }
+      
+      System.out.print( "Test for Radar: " );
+      try { System.out.println( StringStuff.containsVowel( "Radar" ) ? "works : "failed" ); }
+      catch( Exception e ) { System.out.println ( false ); }
 
       System.out.print( "Test for Umbrella: " );
       try { System.out.println( StringStuff.containsVowel( "Umbrella" ) ? "works" : "failed" ); }
@@ -60,18 +64,43 @@ public class StringStuffTester {
 
     System.out.println ("Palindrome Test");
 
-   System.out.print( "Test for racecar:  " );
-   try { System.out.println( StringStuff.isPalindrome( "racecar" ) ? "works" : "failed" ); }
-   catch( Exception e ) { System.out.println ( false ); }
+
+System.out.print( "Test for U: " );
+      try { System.out.println( StringStuff.containsVowel( "U" ) ? "works : "failed" ); }
+      catch( Exception e ) { System.out.println ( false ); }
+      
+      System.out.print( "Test for Radar: " );
+      try { System.out.println( StringStuff.containsVowel( "Radar" ) ? "works : "failed" ); }
+      catch( Exception e ) { System.out.println ( false ); }
+
+      System.out.print( "Test for Umbrella: " );
+      try { System.out.println( StringStuff.containsVowel( "Umbrella" ) ? "works" : "failed" ); }
+      catch( Exception e ) { System.out.println ( false ); }
+
+      System.out.print( "Test for Hamster: " );
+      try { System.out.println( StringStuff.containsVowel( "Hamster" ) ? "works" : "failed" ); }
+      catch( Exception e ) { System.out.println ( false ); }
+
+      System.out.print( "Test for Apache " );
+      try { System.out.println( StringStuff.containsVowel( "Apache" ) ? "works" : "failed" ); }
+      catch( Exception e ) { System.out.println ( false )
    }
 
    public static void test_evensOnly() {
 
     System.out.println ("Evens Only");
+    
+    
     try {
     System.out.print( "Test for KOALA:  " );
     String test7 = StringStuff.evensOnly( "KOALA");
     System.out.println(  test7.equals("L")   ? "works" : "failed"); }
+    catch ( Exception e ) {System.out.println (false); }
+    
+    try {
+    System.out.print( "Test for ANT:  " );
+    String test7 = StringStuff.evensOnly( "ANT");
+    System.out.println(  test7.equals("NT")   ? "works" : "failed"); }
     catch ( Exception e ) {System.out.println (false); }
 
 
