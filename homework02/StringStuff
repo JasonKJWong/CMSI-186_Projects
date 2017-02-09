@@ -115,8 +115,8 @@ public class StringStuff{
 
    public static String reverse( String s ) {
      String opposite = new String ("");
-        for ( int i = s.length()-1; i >= 0; i = i-1){
-        opposite = opposite.concat(Character.toString(s.charAt(i)));
+       for ( int i = s.length()-1; i >= 0; i = i-1){
+       opposite = opposite.concat(Character.toString(s.charAt(i)));
      }
      return opposite;
    }
