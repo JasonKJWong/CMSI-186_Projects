@@ -22,25 +22,18 @@
 
 public class StringStuffTester {
 
-  /**
-   * the main method which calls all of the test methods in the class
-   * @param args String[] array containing command line parameters
-   * @return void
-   */
+
    public static void main ( String [] args ) {
 
-      test_containsVowel();      // fill in how many tests
-      test_isPalindrome();       // fill in how many tests
-      test_evensOnly();          // fill in how many tests
-      test_oddsOnly();           // fill in how many tests
-      test_evensOnlyNoDupes();   // fill in how many tests
-      test_oddsOnlyNoDupes();    // fill in how many tests
-      test_reverse();            // fill in how many tests
+      test_containsVowel();      // 
+      test_isPalindrome();       // 
+      test_evensOnly();          // 
+      test_oddsOnly();           // 
+      test_evensOnlyNoDupes();   //
+      test_oddsOnlyNoDupes();    // 
+      test_reverse();            // 
    }
 
-  /**
-   * test method to test out the operation of the containsVowel method
-   */
    public static void test_containsVowel() {
    
    System.out.println ("Test for vowels.");
@@ -75,7 +68,7 @@ public class StringStuffTester {
 
    public static void test_evensOnly() {
 
-     System.out.println ("Evens Only");
+    System.out.println ("Evens Only");
      
     System.out.print( "Test for racecar:  " );
     try { System.out.println( StringStuff.evensOnly( "racecar" ) ? "true" : "false" ); }
@@ -84,32 +77,48 @@ public class StringStuffTester {
 
    }
 
-  /**
-   * test method to test out the operation of the oddsOnly method
-   */
+
    public static void test_oddsOnly() {
 
+   System.out.println ("Odds Only");
+     
+    System.out.print( "Test for racecar:  " );
+    try { System.out.println( StringStuff.oddsOnly( "racecar" ) ? "true" : "false" ); }
+    catch( Exception e ) { System.out.println ( false ); }
+    
    }
 
-  /**
-   * test method to test out the operation of the evensOnlyNoDupes method
-   */
+
    public static void test_evensOnlyNoDupes() {
 
+    System.out.println ("EvensOnlyNoDupes");
+     
+    System.out.print( "Test for racecar:  " );
+    try { System.out.println( StringStuff.evensOnlyNoDupes( "racecar" ) ? "true" : "false" ); }
+    catch( Exception e ) { System.out.println ( false ); }
+    
    }
 
-  /**
-   * test method to test out the operation of the oddsOnlyNoDupes method
-   */
+
    public static void test_oddsOnlyNoDupes() {
 
+    System.out.println ("oddsOnlyNoDupes");
+     
+    System.out.print( "Test for racecar:  " );
+    try { System.out.println( StringStuff.oddsOnlyNoDupes( "racecar" ) ? "true" : "false" ); }
+    catch( Exception e ) { System.out.println ( false ); }
+    
    }
 
-  /**
-   * test method to test out the operation of the reverse method
-   */
+
    public static void test_reverse() {
 
+   System.out.println ("reverse test");
+     
+    System.out.print( "Test for racecar:  " );
+    try { System.out.println( StringStuff.reverse( "racecar" ) ? "true" : "false" ); }
+    catch( Exception e ) { System.out.println ( false ); }
+    
    }
 
 }
