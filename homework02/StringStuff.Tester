@@ -24,8 +24,8 @@ public class StringStuffTester {
 
    public static void main ( String [] args ) {
 
-      test_containsVowel();      //
-      test_isPalindrome();       //
+      test_containsVowel();      // 5 
+      test_isPalindrome();       // 5
       test_evensOnly();          //
       test_oddsOnly();           //
       test_evensOnlyNoDupes();   //
@@ -101,6 +101,12 @@ System.out.print( "Test for U: " );
     System.out.print( "Test for ANT:  " );
     String test7 = StringStuff.evensOnly( "ANT");
     System.out.println(  test7.equals("NT")   ? "works" : "failed"); }
+    catch ( Exception e ) {System.out.println (false); }
+    
+    try {
+    System.out.print( "Test for REAL:  " );
+    String test7 = StringStuff.evensOnly( "REAL");
+    System.out.println(  test7.equals("LR")   ? "works" : "failed"); }
     catch ( Exception e ) {System.out.println (false); }
 
 
