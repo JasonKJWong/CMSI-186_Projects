@@ -66,23 +66,27 @@ public class StringStuffTester {
 
 
 System.out.print( "Test for U: " );
-      try { System.out.println( StringStuff.containsVowel( "U" ) ? "works" : "failed" ); }
+      try { System.out.println( StringStuff.isPalindrome( "U" ) ? "works" : "failed" ); }
       catch( Exception e ) { System.out.println ( false ); }
 
       System.out.print( "Test for Radar: " );
-      try { System.out.println( StringStuff.containsVowel( "Radar" ) ? "works" : "failed" ); }
+      try { System.out.println( StringStuff.isPalindrome( "Radar" ) ? "works" : "failed" ); }
       catch( Exception e ) { System.out.println ( false ); }
 
       System.out.print( "Test for Umbrella: " );
-      try { System.out.println( StringStuff.containsVowel( "Umbrella" ) ? "works" : "failed" ); }
+      try { System.out.println( StringStuff.isPalindrome( "Umbrella" ) ? "works" : "failed" ); }
       catch( Exception e ) { System.out.println ( false ); }
 
       System.out.print( "Test for Hamster: " );
-      try { System.out.println( StringStuff.containsVowel( "Hamster" ) ? "works" : "failed" ); }
+      try { System.out.println( StringStuff.isPalindrome( "Hamster" ) ? "works" : "failed" ); }
+      catch( Exception e ) { System.out.println ( false ); }
+      
+      System.out.print( "Test for E: " );
+      try { System.out.println( StringStuff.isPalindrome( "Ham" ) ? "works" : "failed" ); }
       catch( Exception e ) { System.out.println ( false ); }
 
       System.out.print( "Test for Apache " );
-      try { System.out.println( StringStuff.containsVowel( "Apache" ) ? "works" : "failed" ); }
+      try { System.out.println( StringStuff.isPalindrome( "Apache" ) ? "works" : "failed" ); }
       catch( Exception e ) { System.out.println ( false ); }
    }
 
