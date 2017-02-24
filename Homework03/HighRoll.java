@@ -49,7 +49,7 @@ public class HighRoll{
             }
 
             if ('2' == inputLine.charAt(0)){
-              System.out.println("After rolling the die, result is: " + r.rollIndividual(0));
+              System.out.println("After rolling the die, result is: " + r.rollIndividual(1));
             }
 
             if ('3' == inputLine.charAt(0)){
