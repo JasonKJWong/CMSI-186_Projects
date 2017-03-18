@@ -60,7 +60,7 @@ public class ClockSolver {
             clock.tick(60);
             clock.getHourHandAngle();
             clock.getMinuteHandAngle();
-            if (Math.round(clock.getHandAngle() - cse.angleTest)<= cse.EPSILON_VALUE){
+            if (Math.abs(clock.getHandAngle() - cse.angleTest)<= cse.EPSILON_VALUE){
             System.out.println(clock.toString());
           }
         }
@@ -71,7 +71,7 @@ public class ClockSolver {
           clock.tick(ticker2);
           clock.getHourHandAngle();
           clock.getMinuteHandAngle();
-          if (Math.round(clock.getHandAngle() - cse.angleTest) <= cse.EPSILON_VALUE){
+          if (Math.abs(clock.getHandAngle() - cse.angleTest) <= cse.EPSILON_VALUE){
           System.out.println(clock.toString());
         }
       }
