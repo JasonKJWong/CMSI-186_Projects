@@ -24,19 +24,33 @@ public class SoccerSim {
   public Ball[] balls;
   public double[] collision;
   public Ticker ticker;
+  public double pole;
 
   private static final double BALL_RADIUS = 4.45;
+  public static final double POLE_X_POSITION = 45;
+  public static final double POLE_Y_POSITION = -10;
+
 
   public double distance;
   public double timeSlice;
   public double CollisionX;
   public double CollisionY;
 
+
   public SoccerSim(){
     timeSlice = 0;
     balls = null;
     numberBalls = 0;
   }
+
+  public double getPoleXPosition(){
+    return POLE_X_POSITION;
+  }
+
+  public double getPoleYPosition(){
+    return POLE_X_POSITION;
+  }
+
 
   public void createBalls(String args[] ) {
      System.out.println("Beginning Soccer Simulation . . .");
