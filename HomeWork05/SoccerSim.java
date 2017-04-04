@@ -34,7 +34,9 @@ public class SoccerSim {
   public double distance;
   public double timeSlice;
   public double CollisionX;
+  public double CollisionX2;
   public double CollisionY;
+  public double CollisionY2;
 
 
   public SoccerSim(){
@@ -49,6 +51,24 @@ public class SoccerSim {
 
   public double getPoleYPosition(){
     return POLE_X_POSITION;
+  }
+
+  public boolean poleCollision(){
+    for (int i = 0; i<= numberBalls-2; i++){
+      for (int j = 1 + i; j<= numberBalls-1; j++){
+        CollisionX2 = getPoleXPosition()- balls[1].getBallPosition()[0];
+        double exponentialX2 = Math.pow(CollisionX2 ,2);
+        CollisionY2 = getPoleYPosition()- balls[1].getBallPosition()[1];
+        double exponentialY2 = Math.pow(CollisionY2,2);
+        distance = Math.sqrt(exponentialX2 + exponentialY2);
+        if (distance <=BALL_RADIUS){
+          System.out.println("Pole Collision has occurred");
+          return true;
+        }
+        return false;
+      }
+    }
+    return false;
   }
 
 
@@ -117,11 +137,13 @@ public boolean ballCollision(){
     while (j.gameOver()){
       j.addBalls();
       tickfinal.tick();
-
       if (j.ballCollision() == true){
         break;
       }
-      continue;
+      if (j.poleCollision() == true){
+        break;
+      } else { continue;
+      }
     }
   }
 }
