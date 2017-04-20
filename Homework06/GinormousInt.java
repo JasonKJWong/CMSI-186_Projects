@@ -49,6 +49,10 @@
        this.numHolder[this.numHolder.length - i - 1]  = Byte.parseByte(inputValue.substring(i,1+i));
      }
    }
+  
+  public GinormousInt multiply( GinormousInt numbertest ) {
+        throw new UnsupportedOperationException( "\n         Sorry, that operation is not yet implemented." );
+     }
 
    // return valus of -1/0/1 = less than, equal to, greater than inputValue2
     public int compareTo(GinormousInt inputValue2){
@@ -161,10 +165,6 @@ return addsum;
      }
      return stringOfDigits;
    }
-
-   public GinormousInt multiply( GinormousInt numbertest ) {
-        throw new UnsupportedOperationException( "\n         Sorry, that operation is not yet implemented." );
-     }
 
    public GinormousInt divide( GinormousInt numbertest ) {
         throw new UnsupportedOperationException( "\n         Sorry, that operation is not yet implemented." );
