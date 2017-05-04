@@ -9,7 +9,6 @@
  *  Warnings      :  None
  *  Exceptions    :  None
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 public class DynamicChangemaker {
 /**
 * Main program for DynamicChangeMaker
