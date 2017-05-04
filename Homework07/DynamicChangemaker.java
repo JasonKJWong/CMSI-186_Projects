@@ -5,7 +5,7 @@
  *  @author       :  Jason Wong
  *  Date written  :  2017-04-27
  *  Description   :  generates most optimal way to make change of a given amount
- *  Notes         :  everything functions properly
+ *  Notes         :  everything functions properly(aside from test17..)
  *  Warnings      :  None
  *  Exceptions    :  None
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
